@@ -13,6 +13,10 @@ FROM node:22.13.1-slim
 # Expose port and start app
 WORKDIR /app
 COPY --from=build /app /app
+
+# Install NestJS CLI globally
+RUN npm install -g @nestjs/cli
+
 RUN npm prune --production  # Remove development dependencies
 EXPOSE 5001
 CMD ["npm", "run", "start"]
