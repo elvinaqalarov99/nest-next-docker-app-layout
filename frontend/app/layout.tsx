@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Turanboost.az - Boost your subscribers, likes, comments, views",
-  description: "Turanboost.az - Pay to get genuine statistics",
+  title: "Setup for Next.js + Nest.js + Nginx",
+  description: "Setup for Next.js + Nest.js + Nginx dockerized",
 };
 
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode; }>) {
